@@ -172,6 +172,78 @@ tailwind.config = { theme: { extend: {
           </section>
 
         </div>
+
+        <!-- Recommended Videos (matches the live dashboard widget) -->
+        <section class="flex flex-col gap-3">
+          <div class="flex items-center justify-between">
+            <h2 class="flex items-center gap-2 text-lg font-bold text-brand-textPrimary"><i data-lucide="play-circle" class="h-5 w-5 text-brand-primary"></i> Recommended Videos</h2>
+            <a href="recommendations.html" class="flex items-center gap-1 text-sm font-semibold text-[#0a7c85] hover:underline">View all <i data-lucide="arrow-right" class="size-3.5"></i></a>
+          </div>
+
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+            <a href="#" class="block overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-md transition">
+              <div class="relative h-28 bg-gray-800">
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&q=70&auto=format&fit=crop" alt="" class="absolute inset-0 size-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <span class="flex size-9 items-center justify-center rounded-full bg-white/25 backdrop-blur"><i data-lucide="play" class="h-4 w-4 fill-white text-white"></i></span>
+                </div>
+                <span class="absolute bottom-1.5 right-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white">14:30</span>
+              </div>
+              <div class="px-3 py-2">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brand-primary">Physics</p>
+                <h3 class="text-[13px] font-bold text-brand-textPrimary">Rotational Motion — Torque &amp; Angular Momentum</h3>
+              </div>
+            </a>
+
+            <a href="#" class="block overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-md transition">
+              <div class="relative h-28 bg-gray-800">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&q=70&auto=format&fit=crop" alt="" class="absolute inset-0 size-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <span class="flex size-9 items-center justify-center rounded-full bg-white/25 backdrop-blur"><i data-lucide="play" class="h-4 w-4 fill-white text-white"></i></span>
+                </div>
+                <span class="absolute bottom-1.5 right-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white">12:05</span>
+              </div>
+              <div class="px-3 py-2">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brand-primary">Chemistry</p>
+                <h3 class="text-[13px] font-bold text-brand-textPrimary">Thermodynamics — First Law Explained</h3>
+              </div>
+            </a>
+
+            <a href="#" class="block overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-md transition">
+              <div class="relative h-28 bg-gray-800">
+                <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=400&q=70&auto=format&fit=crop" alt="" class="absolute inset-0 size-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <span class="flex size-9 items-center justify-center rounded-full bg-white/25 backdrop-blur"><i data-lucide="play" class="h-4 w-4 fill-white text-white"></i></span>
+                </div>
+                <span class="absolute bottom-1.5 right-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white">18:20</span>
+              </div>
+              <div class="px-3 py-2">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brand-primary">Mathematics</p>
+                <h3 class="text-[13px] font-bold text-brand-textPrimary">Conic Sections — Parabola Masterclass</h3>
+              </div>
+            </a>
+
+            <a href="#" class="block overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-md transition">
+              <div class="relative h-28 bg-gray-800">
+                <img src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?w=400&q=70&auto=format&fit=crop" alt="" class="absolute inset-0 size-full object-cover">
+                <div class="absolute inset-0 flex items-center justify-center bg-black/20">
+                  <span class="flex size-9 items-center justify-center rounded-full bg-white/25 backdrop-blur"><i data-lucide="play" class="h-4 w-4 fill-white text-white"></i></span>
+                </div>
+                <span class="absolute bottom-1.5 right-1.5 rounded bg-black/70 px-1.5 py-0.5 text-[10px] font-semibold text-white">09:45</span>
+              </div>
+              <div class="px-3 py-2">
+                <p class="text-[10px] font-bold uppercase tracking-wider text-brand-primary">Chemistry</p>
+                <h3 class="text-[13px] font-bold text-brand-textPrimary">Electrochemistry — Nernst Equation</h3>
+              </div>
+            </a>
+
+          </div>
+
+          <a href="#" class="flex items-center justify-center gap-1.5 rounded-2xl border border-dashed border-brand-borderLight bg-white py-3 text-sm font-semibold text-[#0a7c85] hover:bg-brand-subtle">
+            Browse video library <i data-lucide="arrow-right" class="size-3.5"></i>
+          </a>
+        </section>
       </div>
     </main>
   </div>
