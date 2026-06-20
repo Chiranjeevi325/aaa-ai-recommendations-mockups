@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Screens · AAA Lakshya AI Recommendations</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Crimson+Text:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
+  fontFamily: { sans:['Inter','ui-sans-serif','system-ui','sans-serif'] } } } }
+</script>
+<style>
+  body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif}
+  .frame{position:relative;width:100%;overflow:hidden;background:#fff}
+  .frame iframe{border:0;transform-origin:top left;pointer-events:none}
+  /* click-catcher overlay so the whole tile opens the full page */
+  .frame a.catch{position:absolute;inset:0;z-index:2}
+</style>
+</head>
+<body class="bg-brand-page text-brand-textPrimary">
+
+  <!-- Hero -->
+  <header class="bg-gradient-to-br from-brand-primaryDark to-brand-heroTeal text-white">
+    <div class="mx-auto max-w-7xl px-6 py-8">
+      <a href="index.html" class="text-sm font-semibold text-white/80 hover:text-white">← Back to hub</a>
+      <h1 class="mt-3 flex items-center gap-3 text-3xl font-extrabold sm:text-4xl">✨ AI Recommendations — All Screens</h1>
+      <p class="mt-2 text-base text-white/85">Every screen of the feature on one page. Click any preview to open it full-size.</p>
+      <div class="mt-4 flex flex-wrap gap-2 text-[12.5px]">
+        <span class="rounded-full bg-white/15 px-3 py-1 font-medium">P2-05</span>
+        <span class="rounded-full bg-white/15 px-3 py-1 font-medium">Phase 2 · P1</span>
+        <span class="rounded-full bg-white/15 px-3 py-1 font-medium">7 screens</span>
+        <span class="rounded-full bg-white/15 px-3 py-1 font-medium">Live product theme</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-6 py-8">
+    <div id="grid" class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+
+      <!-- tiles injected pattern: each is a card with bar + scaled iframe -->
+      <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between border-b border-gray-100 px-4 py-2.5">
+          <p class="flex items-center gap-2 text-sm font-bold"><span class="flex h-6 w-6 items-center justify-center rounded-md bg-brand-subtle text-[11px] text-brand-primary">1</span> Dashboard — Suggested for You</p>
+          <a href="dashboard.html" target="_blank" class="flex items-center gap-1 text-xs font-semibold text-brand-primary hover:underline">Open <i data-lucide="external-link" class="h-3.5 w-3.5"></i></a>
+        </div>
+        <div class="frame" data-dh="1180"><iframe src="dashboard.html" loading="lazy" scrolling="no"></iframe><a class="catch" href="dashboard.html" target="_blank" aria-label="Open Dashboard"></a></div>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between border-b border-gray-100 px-4 py-2.5">
+          <p class="flex items-center gap-2 text-sm font-bold"><span class="flex h-6 w-6 items-center justify-center rounded-md bg-brand-subtle text-[11px] text-brand-primary">2</span> All Recommendations</p>
+          <a href="recommendations.html" target="_blank" class="flex items-center gap-1 text-xs font-semibold text-brand-primary hover:underline">Open <i data-lucide="external-link" class="h-3.5 w-3.5"></i></a>
+        </div>
+        <div class="frame" data-dh="1180"><iframe src="recommendations.html" loading="lazy" scrolling="no"></iframe><a class="catch" href="recommendations.html" target="_blank" aria-label="Open All Recommendations"></a></div>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between border-b border-gray-100 px-4 py-2.5">
+          <p class="flex items-center gap-2 text-sm font-bold"><span class="flex h-6 w-6 items-center justify-center rounded-md bg-brand-subtle text-[11px] text-brand-primary">3</span> Topic Mastery Breakdown</p>
+          <a href="mastery-detail.html" target="_blank" class="flex items-center gap-1 text-xs font-semibold text-brand-primary hover:underline">Open <i data-lucide="external-link" class="h-3.5 w-3.5"></i></a>
+        </div>
+        <div class="frame" data-dh="1180"><iframe src="mastery-detail.html" loading="lazy" scrolling="no"></iframe><a class="catch" href="mastery-detail.html" target="_blank" aria-label="Open Topic Mastery Breakdown"></a></div>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between border-b border-gray-100 px-4 py-2.5">
+          <p class="flex items-center gap-2 text-sm font-bold"><span class="flex h-6 w-6 items-center justify-center rounded-md bg-brand-subtle text-[11px] text-brand-primary">4</span> Smart Test (AI selection)</p>
+          <a href="smart-test.html" target="_blank" class="flex items-center gap-1 text-xs font-semibold text-brand-primary hover:underline">Open <i data-lucide="external-link" class="h-3.5 w-3.5"></i></a>
+        </div>
+        <div class="frame" data-dh="1180"><iframe src="smart-test.html" loading="lazy" scrolling="no"></iframe><a class="catch" href="smart-test.html" target="_blank" aria-label="Open Smart Test"></a></div>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between border-b border-gray-100 px-4 py-2.5">
+          <p class="flex items-center gap-2 text-sm font-bold"><span class="flex h-6 w-6 items-center justify-center rounded-md bg-brand-subtle text-[11px] text-brand-primary">5</span> Post-Test Recommendations</p>
+          <a href="post-test.html" target="_blank" class="flex items-center gap-1 text-xs font-semibold text-brand-primary hover:underline">Open <i data-lucide="external-link" class="h-3.5 w-3.5"></i></a>
+        </div>
+        <div class="frame" data-dh="1180"><iframe src="post-test.html" loading="lazy" scrolling="no"></iframe><a class="catch" href="post-test.html" target="_blank" aria-label="Open Post-Test Recommendations"></a></div>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between border-b border-gray-100 px-4 py-2.5">
+          <p class="flex items-center gap-2 text-sm font-bold"><span class="flex h-6 w-6 items-center justify-center rounded-md bg-brand-subtle text-[11px] text-brand-primary">6</span> Upgrade Prompt (Free / Standard)</p>
+          <a href="upgrade.html" target="_blank" class="flex items-center gap-1 text-xs font-semibold text-brand-primary hover:underline">Open <i data-lucide="external-link" class="h-3.5 w-3.5"></i></a>
+        </div>
+        <div class="frame" data-dh="1180"><iframe src="upgrade.html" loading="lazy" scrolling="no"></iframe><a class="catch" href="upgrade.html" target="_blank" aria-label="Open Upgrade Prompt"></a></div>
+      </div>
+
+      <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between border-b border-gray-100 px-4 py-2.5">
+          <p class="flex items-center gap-2 text-sm font-bold"><span class="flex h-6 w-6 items-center justify-center rounded-md bg-brand-subtle text-[11px] text-brand-primary">7</span> Activation — Minimum 5 Tests</p>
+          <a href="getting-started.html" target="_blank" class="flex items-center gap-1 text-xs font-semibold text-brand-primary hover:underline">Open <i data-lucide="external-link" class="h-3.5 w-3.5"></i></a>
+        </div>
+        <div class="frame" data-dh="1180"><iframe src="getting-started.html" loading="lazy" scrolling="no"></iframe><a class="catch" href="getting-started.html" target="_blank" aria-label="Open Activation"></a></div>
+      </div>
+
+    </div>
+
+    <p class="mt-8 text-center text-xs text-brand-textMuted">AAA Lakshya · AI Recommendations · interactive mockups for client review — not connected to the live application. Sample data only.</p>
+  </main>
+
+<script>
+  lucide.createIcons();
+  // Render each screen at a desktop design width and scale it to fit its tile,
+  // so the sidebar + header layout shows correctly in the thumbnail.
+  const DESIGN_W = 1400;
+  function fitFrames() {
+    document.querySelectorAll('.frame').forEach((f) => {
+      const ifr = f.querySelector('iframe');
+      const dh = parseInt(f.getAttribute('data-dh'), 10) || 1100;
+      const s = f.clientWidth / DESIGN_W;
+      ifr.style.width = DESIGN_W + 'px';
+      ifr.style.height = dh + 'px';
+      ifr.style.transform = 'scale(' + s + ')';
+      f.style.height = (dh * s) + 'px';
+    });
+  }
+  fitFrames();
+  window.addEventListener('resize', fitFrames);
+  window.addEventListener('load', fitFrames);
+</script>
+</body>
+</html>
