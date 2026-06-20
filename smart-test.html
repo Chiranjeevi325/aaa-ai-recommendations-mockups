@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Test · AAA Lakshya</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
+  fontFamily: { sans:['Geist','ui-sans-serif','system-ui','sans-serif'] } } } }
+</script>
+<style> body{font-family:'Geist',ui-sans-serif,system-ui,sans-serif} </style>
+</head>
+<body class="bg-brand-page text-brand-textPrimary">
+
+  <header class="bg-brand-primaryDark text-white">
+    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-2.5 font-bold">
+        <span class="h-8 w-8 rounded-lg flex items-center justify-center text-white text-xs font-extrabold" style="background:linear-gradient(174deg,#3bafa8,#2c9d96)">AAA</span> Lakshya
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="dashboard.html" class="opacity-90 hover:opacity-100">Dashboard</a><a href="post-test.html" class="border-b-2 border-brand-secondary pb-3.5 -mb-3.5">Tests</a><span class="opacity-50 cursor-default">Study</span><span class="opacity-50 cursor-default">Live</span><a href="recommendations.html" class="opacity-90 hover:opacity-100">Recommendations</a>
+      </nav>
+      <div class="flex items-center gap-2 text-sm">
+        <span class="hidden sm:inline">Ananya R.</span>
+        <span class="h-8 w-8 rounded-full bg-brand-secondary text-brand-primaryDark flex items-center justify-center font-bold text-xs">AR</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="bg-white border-b border-gray-200">
+    <div class="max-w-5xl mx-auto px-5 py-2 text-sm">
+      <a href="dashboard.html" class="text-brand-primary font-semibold hover:underline">← Back to dashboard</a>
+      <span class="text-brand-textMuted"> / Tests / Create a Smart Test</span>
+    </div>
+  </div>
+
+  <main class="max-w-3xl mx-auto px-5 py-7">
+    <h1 class="text-2xl font-bold mb-1">Create a Smart Test</h1>
+    <p class="text-sm text-brand-textMuted mb-6">The AI picks questions based on your past performance — and adapts as you go.</p>
+
+    <div class="rounded-2xl bg-white border border-gray-200 p-5 space-y-5">
+
+      <!-- Subject / topic -->
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="text-[13px] font-semibold text-brand-textSecondary">Subject</label>
+          <div class="mt-1 flex items-center justify-between rounded-lg border border-gray-300 px-3 py-2 text-sm">Physics <i data-lucide="chevron-down" class="h-4 w-4 text-brand-textMuted"></i></div>
+        </div>
+        <div>
+          <label class="text-[13px] font-semibold text-brand-textSecondary">Topic</label>
+          <div class="mt-1 flex items-center justify-between rounded-lg border border-gray-300 px-3 py-2 text-sm">Rotational Motion <i data-lucide="chevron-down" class="h-4 w-4 text-brand-textMuted"></i></div>
+        </div>
+      </div>
+
+      <!-- Number of questions -->
+      <div>
+        <label class="text-[13px] font-semibold text-brand-textSecondary">Number of questions</label>
+        <div class="mt-1 flex items-center justify-between rounded-lg border border-gray-300 px-3 py-2 text-sm">20 questions <i data-lucide="chevron-down" class="h-4 w-4 text-brand-textMuted"></i></div>
+      </div>
+
+      <!-- Smart selection toggle (AI-33 / AI-32) -->
+      <div class="flex items-center justify-between rounded-xl border border-brand-secondary bg-brand-subtle/40 p-4">
+        <div class="pr-4">
+          <p class="font-semibold text-[14.5px] flex items-center gap-1.5"><i data-lucide="sparkles" class="h-4 w-4 text-brand-primary"></i> Smart question selection (AI)</p>
+          <p class="text-xs text-brand-textMuted mt-0.5">Auto-picks questions at the right level for you, instead of fully random.</p>
+        </div>
+        <span class="relative inline-flex h-6 w-11 items-center rounded-full" style="background:linear-gradient(174deg,#3bafa8,#2c9d96)">
+          <span class="inline-block h-5 w-5 translate-x-5 rounded-full bg-white shadow"></span>
+        </span>
+      </div>
+
+      <!-- Why this mix (AI-33) -->
+      <div class="rounded-xl bg-brand-page p-4">
+        <p class="text-[13px] font-semibold text-brand-textSecondary mb-3 flex items-center gap-1.5"><i data-lucide="wand-2" class="h-4 w-4 text-brand-primary"></i> Question mix chosen for you</p>
+        <div class="flex h-4 w-full overflow-hidden rounded-full">
+          <div class="bg-brand-success" style="width:25%"></div>
+          <div style="width:45%;background:#e0a800"></div>
+          <div class="bg-brand-warning" style="width:30%"></div>
+        </div>
+        <div class="flex justify-between text-xs text-brand-textMuted mt-2">
+          <span><b class="text-brand-textSecondary">25%</b> Easy</span>
+          <span><b class="text-brand-textSecondary">45%</b> Medium</span>
+          <span><b class="text-brand-textSecondary">30%</b> Hard</span>
+        </div>
+        <p class="mt-3 text-[12.5px] text-brand-textSecondary bg-white rounded-lg px-3 py-2 border border-gray-200">
+          You answer Easy questions confidently here, so we've reduced Easy and added more Medium &amp; Hard to push you.
+        </p>
+      </div>
+
+      <!-- Real-time adapt note (AI-29) -->
+      <div class="flex items-start gap-2 rounded-lg bg-[#e0eefa] px-3 py-2.5 text-[12.5px] text-[#1d5a8a]">
+        <i data-lucide="activity" class="h-4 w-4 shrink-0 mt-0.5"></i>
+        Difficulty adapts in real time — answer a few correctly and the next questions get harder; struggle and they ease off.
+      </div>
+
+      <button class="w-full inline-flex items-center justify-center gap-2 text-white text-sm font-bold rounded-xl px-5 py-3" style="background-image:linear-gradient(174deg,#3bafa8,#2c9d96);box-shadow:0 2px 14px rgba(59,175,168,.35)">
+        <i data-lucide="play" class="h-4 w-4"></i> Start Smart Test
+      </button>
+    </div>
+  </main>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

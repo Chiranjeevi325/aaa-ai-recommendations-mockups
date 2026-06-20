@@ -34,7 +34,7 @@ tailwind.config = { theme: { extend: {
     <!-- Group: Student -->
     <section class="mb-10">
       <div class="flex items-center gap-3 mb-4">
-        <span class="rounded-full bg-brand-subtle text-brand-primary text-xs font-semibold px-3 py-1">2 screens</span>
+        <span class="rounded-full bg-brand-subtle text-brand-primary text-xs font-semibold px-3 py-1">3 screens</span>
         <h2 class="text-2xl font-bold text-brand-primary">Student — Discover &amp; Focus</h2>
       </div>
       <div class="grid sm:grid-cols-2 gap-5">
@@ -48,6 +48,26 @@ tailwind.config = { theme: { extend: {
           <p class="font-bold text-lg">2. All Recommendations</p>
           <p class="text-sm text-brand-textMuted mt-1">Full page grouped by type — Watch Videos, Practice Questions, Focus Chapters. Max 5 per type, adaptive difficulty, each card dismissible with "×".</p>
         </a>
+        <a href="mastery-detail.html" class="card block rounded-2xl bg-white border-l-4 border-brand-primary shadow-sm p-6">
+          <div class="h-11 w-11 rounded-xl bg-brand-subtle flex items-center justify-center text-brand-primary mb-4"><i data-lucide="bar-chart-3" class="h-6 w-6"></i></div>
+          <p class="font-bold text-lg">3. Topic Mastery Breakdown</p>
+          <p class="text-sm text-brand-textMuted mt-1">Tap a topic to see how mastery is calculated (test scores + video + chapter tests), time spent, accuracy by difficulty, and what to do next.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Group: Smart practice -->
+    <section class="mb-10">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="rounded-full bg-brand-subtle text-brand-primary text-xs font-semibold px-3 py-1">1 screen</span>
+        <h2 class="text-2xl font-bold text-brand-primary">Smart Practice — Adaptive Tests</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <a href="smart-test.html" class="card block rounded-2xl bg-white border-l-4 border-brand-primary shadow-sm p-6">
+          <div class="h-11 w-11 rounded-xl bg-brand-subtle flex items-center justify-center text-brand-primary mb-4"><i data-lucide="wand-2" class="h-6 w-6"></i></div>
+          <p class="font-bold text-lg">4. Smart Test (AI question selection)</p>
+          <p class="text-sm text-brand-textMuted mt-1">Build a custom test where the AI picks questions from your past performance and adapts difficulty in real time as you answer.</p>
+        </a>
       </div>
     </section>
 
@@ -60,38 +80,28 @@ tailwind.config = { theme: { extend: {
       <div class="grid sm:grid-cols-2 gap-5">
         <a href="post-test.html" class="card block rounded-2xl bg-white border-l-4 border-brand-success shadow-sm p-6">
           <div class="h-11 w-11 rounded-xl bg-[#d6f0e8] flex items-center justify-center text-brand-success mb-4"><i data-lucide="clipboard-check" class="h-6 w-6"></i></div>
-          <p class="font-bold text-lg">3. Post-Test Recommendations</p>
+          <p class="font-bold text-lg">5. Post-Test Recommendations</p>
           <p class="text-sm text-brand-textMuted mt-1">On the results page — targeted next steps based on the topics the student performed poorly on, so they can fix gaps while it's fresh.</p>
         </a>
       </div>
     </section>
 
-    <!-- Group: Tier gating -->
+    <!-- Group: Gating & activation -->
     <section class="mb-10">
       <div class="flex items-center gap-3 mb-4">
-        <span class="rounded-full bg-[#fdeae6] text-brand-warning text-xs font-semibold px-3 py-1">1 screen</span>
-        <h2 class="text-2xl font-bold text-brand-warning">Free / Standard — Upgrade Path</h2>
+        <span class="rounded-full bg-[#fdeae6] text-brand-warning text-xs font-semibold px-3 py-1">2 screens</span>
+        <h2 class="text-2xl font-bold text-brand-warning">Access &amp; Activation</h2>
       </div>
       <div class="grid sm:grid-cols-2 gap-5">
         <a href="upgrade.html" class="card block rounded-2xl bg-white border-l-4 border-brand-warning shadow-sm p-6">
           <div class="h-11 w-11 rounded-xl bg-[#fdeae6] flex items-center justify-center text-brand-warning mb-4"><i data-lucide="lock" class="h-6 w-6"></i></div>
-          <p class="font-bold text-lg">4. Upgrade Prompt</p>
+          <p class="font-bold text-lg">6. Upgrade Prompt (Free / Standard)</p>
           <p class="text-sm text-brand-textMuted mt-1">Recommendations are exclusive to the Advanced tier. Free / Standard students see a locked preview with an invitation to upgrade.</p>
         </a>
-      </div>
-    </section>
-
-    <!-- Group: Reference -->
-    <section class="mb-10">
-      <div class="flex items-center gap-3 mb-4">
-        <span class="rounded-full bg-[#e0eefa] text-brand-info text-xs font-semibold px-3 py-1">reference</span>
-        <h2 class="text-2xl font-bold text-brand-info">Spec &amp; Traceability</h2>
-      </div>
-      <div class="grid sm:grid-cols-2 gap-5">
-        <a href="requirements.html" class="card block rounded-2xl bg-white border-l-4 border-brand-info shadow-sm p-6">
-          <div class="h-11 w-11 rounded-xl bg-[#e0eefa] flex items-center justify-center text-brand-info mb-4"><i data-lucide="table-2" class="h-6 w-6"></i></div>
-          <p class="font-bold text-lg">5. Requirements Traceability</p>
-          <p class="text-sm text-brand-textMuted mt-1">Every requirement (AI-01 → AI-46) from the approved spec, plus acceptance criteria, out-of-scope items and dependencies.</p>
+        <a href="getting-started.html" class="card block rounded-2xl bg-white border-l-4 border-brand-warning shadow-sm p-6">
+          <div class="h-11 w-11 rounded-xl bg-[#fdeae6] flex items-center justify-center text-brand-warning mb-4"><i data-lucide="rocket" class="h-6 w-6"></i></div>
+          <p class="font-bold text-lg">7. Activation — Minimum 5 Tests</p>
+          <p class="text-sm text-brand-textMuted mt-1">Advanced students need 5 completed tests before recommendations activate — shown as a progress state until they qualify.</p>
         </a>
       </div>
     </section>
