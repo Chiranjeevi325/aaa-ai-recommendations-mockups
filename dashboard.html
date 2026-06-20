@@ -60,7 +60,7 @@ tailwind.config = { theme: { extend: {
     </header>
 
     <main class="flex-1 overflow-y-auto px-4 pb-6 pt-2 sm:px-6">
-      <div class="py-2 text-[12px] text-brand-textMuted"><a href="index.html" class="hover:text-brand-primary">Mockups</a> <span class="mx-1">›</span> Dashboard</div>
+      <div class="py-2 text-[12px] text-brand-textMuted"><a href="index.html" class="hover:text-brand-primary">Mockups</a> <span class="mx-1">›</span> Dashboard <span class="ml-1 rounded-full bg-brand-subtle px-2 py-0.5 text-[10px] font-semibold text-brand-primary">existing page + new widget</span></div>
 
       <div class="space-y-5 lg:space-y-6">
 
@@ -94,6 +94,11 @@ tailwind.config = { theme: { extend: {
         </div>
 
         <!-- Feature row: Suggested for You + Topic Mastery -->
+        <div class="flex items-center gap-2 rounded-xl border border-dashed border-brand-secondary bg-brand-subtle/50 px-4 py-2.5 text-[13px] text-brand-primaryDark">
+          <i data-lucide="sparkles" class="h-4 w-4 shrink-0 text-brand-primary"></i>
+          <span><b>New on your dashboard</b> — the AI Recommendations feature adds the two panels below to the page you already have.</span>
+        </div>
+
         <div class="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1.8fr)_minmax(0,1fr)] lg:gap-6">
 
           <!-- Suggested for You -->
