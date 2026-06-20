@@ -3,64 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Upgrade to Advanced · AAA Lakshya</title>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Recommendations · AAA Lakshya</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Crimson+Text:wght@600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
 tailwind.config = { theme: { extend: {
-  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
-  fontFamily: { sans:['Geist','ui-sans-serif','system-ui','sans-serif'] } } } }
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', primaryHover:'#0d8f99', primaryAccent:'#006d77', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', successBg:'#d6f0e8', info:'#3b8fd4', infoBg:'#e0eefa', warning:'#f4735a', warningBg:'#fdeae6', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280', border:'#d1d5db', borderLight:'#e6e8e9' } },
+  fontFamily: { sans:['Inter','ui-sans-serif','system-ui','sans-serif'] } } } }
 </script>
-<style> body{font-family:'Geist',ui-sans-serif,system-ui,sans-serif} </style>
+<style> body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif} .logo-font{font-family:'Crimson Text',serif} </style>
 </head>
 <body class="bg-brand-page text-brand-textPrimary">
+<div class="flex h-dvh overflow-hidden bg-brand-page">
 
-  <header class="bg-brand-primaryDark text-white">
-    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
-      <div class="flex items-center gap-2.5 font-bold">
-        <span class="h-8 w-8 rounded-lg flex items-center justify-center text-white text-xs font-extrabold" style="background:linear-gradient(174deg,#3bafa8,#2c9d96)">AAA</span> Lakshya
-      </div>
-      <nav class="hidden md:flex gap-6 text-sm font-medium">
-        <a href="dashboard.html" class="opacity-90 hover:opacity-100">Dashboard</a><a href="post-test.html" class="opacity-90 hover:opacity-100">Tests</a><span class="opacity-50 cursor-default">Study</span><span class="opacity-50 cursor-default">Live</span><a href="recommendations.html" class="border-b-2 border-brand-secondary pb-3.5 -mb-3.5">Recommendations</a>
-      </nav>
-      <div class="flex items-center gap-2 text-sm">
-        <span class="hidden sm:inline">Rahul M.</span>
-        <span class="h-8 w-8 rounded-full bg-brand-secondary text-brand-primaryDark flex items-center justify-center font-bold text-xs">RM</span>
-      </div>
+  <aside class="hidden md:flex w-[210px] shrink-0 flex-col bg-[#0a7c85] text-white border-r border-[#115e59]">
+    <div class="flex items-center gap-2 px-3 py-4">
+      <div class="h-10 w-10 shrink-0 rounded-full bg-white flex items-center justify-center"><span class="text-[#0a7c85] font-extrabold text-[12px]">AAA</span></div>
+      <span class="logo-font text-[14px] font-bold leading-[16px] text-white">ARJUNAA<br>ACADEMY FOR<br>ACHIEVERS</span>
     </div>
-  </header>
+    <nav class="space-y-1 px-2 pt-2 text-[13px] font-medium">
+      <a href="dashboard.html" class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70 hover:bg-white/5 hover:text-white rounded-xl"><i data-lucide="layout-dashboard" class="h-4 w-4 shrink-0"></i> Dashboard</a>
+      <div class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70"><i data-lucide="book-open" class="h-4 w-4 shrink-0"></i><span class="flex-1">My Learning</span><i data-lucide="chevron-down" class="h-3.5 w-3.5"></i></div>
+      <div class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70"><i data-lucide="video" class="h-4 w-4 shrink-0"></i><span class="flex-1">My Classes</span><i data-lucide="chevron-down" class="h-3.5 w-3.5"></i></div>
+      <div class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70"><i data-lucide="clipboard-list" class="h-4 w-4 shrink-0"></i><span class="flex-1">My Tests</span><i data-lucide="chevron-down" class="h-3.5 w-3.5"></i></div>
+      <a href="recommendations.html" class="flex items-center gap-2 rounded-xl bg-white pl-3 pr-3 py-2.5 text-[#0a7c85] shadow-sm"><i data-lucide="sparkles" class="h-4 w-4 shrink-0"></i> Recommendations</a>
+      <a href="#" class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70 hover:bg-white/5 hover:text-white rounded-xl"><i data-lucide="notebook-pen" class="h-4 w-4 shrink-0"></i> My Notes</a>
+    </nav>
+    <div class="flex-1"></div>
+    <div class="border-t border-white/15 px-3 py-2.5"><div class="flex items-center gap-2.5"><div class="h-8 w-8 rounded-full bg-white flex items-center justify-center text-[#0a7c85] font-bold text-[11px]">RM</div><p class="flex-1 truncate text-[13px] font-semibold text-white">Rahul</p><i data-lucide="chevron-up" class="h-4 w-4 text-white/50"></i></div></div>
+  </aside>
 
-  <div class="bg-white border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-5 py-2 text-sm">
-      <a href="index.html" class="text-brand-primary font-semibold hover:underline">← All mockups</a>
-      <span class="text-brand-textMuted"> / Recommendations (Standard tier)</span>
-    </div>
-  </div>
+  <div class="flex min-w-0 flex-1 flex-col overflow-hidden">
+    <header class="relative flex h-[56px] md:h-[80px] shrink-0 items-center border-b border-brand-borderLight bg-[rgba(246,250,250,0.85)] px-3 md:px-8 backdrop-blur-[6px]">
+      <button class="mr-2 md:hidden text-brand-textPrimary"><i data-lucide="menu" class="h-5 w-5"></i></button>
+      <div class="ml-auto flex items-center gap-2">
+        <span class="flex h-[28px] md:h-[32px] items-center rounded-full bg-brand-gray-100 px-2.5 md:px-4 text-[10px] md:text-[13px] font-semibold uppercase text-brand-textSecondary" style="background:#f3f4f6"><span class="md:hidden">STANDARD</span><span class="hidden md:inline">Current Plan: Standard</span></span>
+        <button class="relative flex h-9 w-9 items-center justify-center rounded-full text-brand-textSecondary hover:bg-black/5"><i data-lucide="bell" class="h-5 w-5"></i><span class="absolute top-2 right-2 h-2 w-2 rounded-full bg-brand-warning"></span></button>
+      </div>
+    </header>
 
-  <main class="max-w-3xl mx-auto px-5 py-10">
-    <div class="rounded-2xl border border-dashed border-brand-secondary p-10 text-center" style="background:linear-gradient(160deg,#fff,#e0f5f6)">
-      <div class="h-16 w-16 mx-auto mb-4 rounded-2xl bg-brand-subtle text-brand-primary flex items-center justify-center"><i data-lucide="lock" class="h-7 w-7"></i></div>
-      <h1 class="text-xl font-bold">Unlock personalized recommendations</h1>
-      <p class="text-sm text-brand-textMuted max-w-md mx-auto mt-2 mb-5">Upgrade to <b>Advanced</b> to get AI-powered video, practice and chapter suggestions tailored to your weak areas — refreshed daily and after every test.</p>
-      <button class="inline-flex items-center gap-2 text-white text-sm font-bold rounded-xl px-5 py-2.5" style="background-image:linear-gradient(174deg,#3bafa8,#2c9d96);box-shadow:0 2px 14px rgba(59,175,168,.35)">Upgrade to Advanced <i data-lucide="arrow-right" class="h-4 w-4"></i></button>
+    <main class="flex-1 overflow-y-auto px-4 pb-6 pt-2 sm:px-6">
+      <div class="py-2 text-[12px] text-brand-textMuted"><a href="index.html" class="hover:text-brand-primary">Mockups</a> <span class="mx-1">›</span> Recommendations</div>
 
-      <!-- locked preview -->
-      <div class="mt-7 max-w-md mx-auto blur-[3px] opacity-60 select-none pointer-events-none">
-        <div class="flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 bg-white text-left">
-          <div class="h-12 w-12 rounded-lg bg-[#e0eefa] text-brand-info flex items-center justify-center shrink-0"><i data-lucide="play" class="h-5 w-5"></i></div>
-          <div class="flex-1">
-            <p class="text-[11px] font-bold uppercase tracking-wide text-brand-primary">Watch this video</p>
-            <p class="font-semibold text-[14.5px]">Rotational Motion — Torque &amp; Angular Momentum</p>
-            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Recommended because your accuracy is 38%</p>
+      <div class="mx-auto max-w-3xl py-6">
+        <div class="rounded-2xl border border-dashed border-brand-secondary p-10 text-center" style="background:linear-gradient(160deg,#fff,#e0f5f6)">
+          <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-brand-subtle text-brand-primary"><i data-lucide="lock" class="h-7 w-7"></i></div>
+          <h1 class="text-xl font-bold">Unlock personalized recommendations</h1>
+          <p class="mx-auto mb-5 mt-2 max-w-md text-sm text-brand-textMuted">Upgrade to <b>Advanced</b> to get AI-powered video, practice and chapter suggestions tailored to your weak areas — refreshed daily and after every test.</p>
+          <button class="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-bold text-white" style="background-image:linear-gradient(174deg,#3bafa8,#2c9d96);box-shadow:0 2px 14px rgba(59,175,168,.35)">Upgrade to Advanced <i data-lucide="arrow-right" class="h-4 w-4"></i></button>
+
+          <div class="mx-auto mt-7 max-w-md select-none opacity-60 blur-[3px]">
+            <div class="flex gap-3 rounded-2xl border border-gray-200 bg-white p-4 text-left"><span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-brand-infoBg text-brand-info"><i data-lucide="play" class="size-5"></i></span><div class="flex-1"><p class="text-[10px] font-bold uppercase tracking-wider text-brand-primary">Watch this video</p><h3 class="text-[13px] font-bold">Rotational Motion — Torque &amp; Angular Momentum</h3><p class="mt-2 inline-block rounded-md bg-brand-page px-2 py-1 text-xs text-brand-textSecondary">Recommended because your accuracy is 38%</p></div></div>
           </div>
         </div>
+        <p class="mt-5 text-center text-xs text-brand-textMuted">Free &amp; Standard tiers see this prompt in place of recommendations (AI-14).</p>
       </div>
-    </div>
-
-    <p class="text-center text-xs text-brand-textMuted mt-6">Free &amp; Standard tiers see this prompt in place of recommendations (AI-14).</p>
-  </main>
-
+    </main>
+  </div>
+</div>
 <script>lucide.createIcons();</script>
 </body>
 </html>

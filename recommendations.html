@@ -3,139 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>All Recommendations · AAA Lakshya</title>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Recommendations · AAA Lakshya</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Crimson+Text:wght@600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
 tailwind.config = { theme: { extend: {
-  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
-  fontFamily: { sans:['Geist','ui-sans-serif','system-ui','sans-serif'] } } } }
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', primaryHover:'#0d8f99', primaryAccent:'#006d77', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', successBg:'#d6f0e8', info:'#3b8fd4', infoBg:'#e0eefa', warning:'#f4735a', warningBg:'#fdeae6', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280', border:'#d1d5db', borderLight:'#e6e8e9' } },
+  fontFamily: { sans:['Inter','ui-sans-serif','system-ui','sans-serif'] } } } }
 </script>
-<style> body{font-family:'Geist',ui-sans-serif,system-ui,sans-serif} </style>
+<style> body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif} .logo-font{font-family:'Crimson Text',serif} </style>
 </head>
 <body class="bg-brand-page text-brand-textPrimary">
+<div class="flex h-dvh overflow-hidden bg-brand-page">
 
-  <header class="bg-brand-primaryDark text-white">
-    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
-      <div class="flex items-center gap-2.5 font-bold">
-        <span class="h-8 w-8 rounded-lg flex items-center justify-center text-white text-xs font-extrabold" style="background:linear-gradient(174deg,#3bafa8,#2c9d96)">AAA</span> Lakshya
-      </div>
-      <nav class="hidden md:flex gap-6 text-sm font-medium">
-        <a href="dashboard.html" class="opacity-90 hover:opacity-100">Dashboard</a><a href="post-test.html" class="opacity-90 hover:opacity-100">Tests</a><span class="opacity-50 cursor-default">Study</span><span class="opacity-50 cursor-default">Live</span><a href="recommendations.html" class="border-b-2 border-brand-secondary pb-3.5 -mb-3.5">Recommendations</a>
-      </nav>
-      <div class="flex items-center gap-2 text-sm">
-        <span class="hidden sm:inline">Ananya R.</span>
-        <span class="h-8 w-8 rounded-full bg-brand-secondary text-brand-primaryDark flex items-center justify-center font-bold text-xs">AR</span>
-      </div>
+  <aside class="hidden md:flex w-[210px] shrink-0 flex-col bg-[#0a7c85] text-white border-r border-[#115e59]">
+    <div class="flex items-center gap-2 px-3 py-4">
+      <div class="h-10 w-10 shrink-0 rounded-full bg-white flex items-center justify-center"><span class="text-[#0a7c85] font-extrabold text-[12px]">AAA</span></div>
+      <span class="logo-font text-[14px] font-bold leading-[16px] text-white">ARJUNAA<br>ACADEMY FOR<br>ACHIEVERS</span>
     </div>
-  </header>
+    <nav class="space-y-1 px-2 pt-2 text-[13px] font-medium">
+      <a href="dashboard.html" class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70 hover:bg-white/5 hover:text-white rounded-xl"><i data-lucide="layout-dashboard" class="h-4 w-4 shrink-0"></i> Dashboard</a>
+      <div class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70"><i data-lucide="book-open" class="h-4 w-4 shrink-0"></i><span class="flex-1">My Learning</span><i data-lucide="chevron-down" class="h-3.5 w-3.5"></i></div>
+      <div class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70"><i data-lucide="video" class="h-4 w-4 shrink-0"></i><span class="flex-1">My Classes</span><i data-lucide="chevron-down" class="h-3.5 w-3.5"></i></div>
+      <div class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70"><i data-lucide="clipboard-list" class="h-4 w-4 shrink-0"></i><span class="flex-1">My Tests</span><i data-lucide="chevron-down" class="h-3.5 w-3.5"></i></div>
+      <a href="recommendations.html" class="flex items-center gap-2 rounded-xl bg-white pl-3 pr-3 py-2.5 text-[#0a7c85] shadow-sm"><i data-lucide="sparkles" class="h-4 w-4 shrink-0"></i> Recommendations</a>
+      <a href="#" class="flex items-center gap-2 border-l-4 border-transparent pl-[8px] pr-3 py-2.5 text-white/70 hover:bg-white/5 hover:text-white rounded-xl"><i data-lucide="notebook-pen" class="h-4 w-4 shrink-0"></i> My Notes</a>
+    </nav>
+    <div class="flex-1"></div>
+    <div class="border-t border-white/15 px-3 py-2.5">
+      <div class="flex items-center gap-2.5"><div class="h-8 w-8 rounded-full bg-white flex items-center justify-center text-[#0a7c85] font-bold text-[11px]">AR</div><p class="flex-1 truncate text-[13px] font-semibold text-white">Ananya</p><i data-lucide="chevron-up" class="h-4 w-4 text-white/50"></i></div>
+    </div>
+  </aside>
 
-  <div class="bg-white border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-5 py-2 text-sm">
-      <a href="index.html" class="text-brand-primary font-semibold hover:underline">← All mockups</a>
-      <span class="text-brand-textMuted"> / All Recommendations</span>
-    </div>
+  <div class="flex min-w-0 flex-1 flex-col overflow-hidden">
+    <header class="relative flex h-[56px] md:h-[80px] shrink-0 items-center border-b border-brand-borderLight bg-[rgba(246,250,250,0.85)] px-3 md:px-8 backdrop-blur-[6px]">
+      <button class="mr-2 md:hidden text-brand-textPrimary"><i data-lucide="menu" class="h-5 w-5"></i></button>
+      <div class="ml-auto flex items-center gap-2">
+        <span class="flex h-[28px] md:h-[32px] items-center rounded-full bg-brand-secondary px-2.5 md:px-4 text-[10px] md:text-[13px] font-semibold uppercase text-[#006d77]"><span class="md:hidden">ADVANCED</span><span class="hidden md:inline">Current Plan: Advanced</span></span>
+        <button class="relative flex h-9 w-9 items-center justify-center rounded-full text-brand-textSecondary hover:bg-black/5"><i data-lucide="bell" class="h-5 w-5"></i><span class="absolute top-2 right-2 h-2 w-2 rounded-full bg-brand-warning"></span></button>
+      </div>
+    </header>
+
+    <main class="flex-1 overflow-y-auto px-4 pb-6 pt-2 sm:px-6">
+      <div class="py-2 text-[12px] text-brand-textMuted"><a href="index.html" class="hover:text-brand-primary">Mockups</a> <span class="mx-1">›</span> Recommendations</div>
+
+      <div class="mx-auto max-w-4xl space-y-5">
+        <div class="flex items-center justify-between">
+          <h1 class="text-2xl font-bold">Recommended for you</h1>
+          <span class="hidden items-center gap-1.5 text-xs text-brand-textMuted sm:inline-flex"><i data-lucide="refresh-cw" class="h-3.5 w-3.5"></i> Refreshed daily · last 30 days</span>
+        </div>
+        <p class="-mt-3 text-sm text-brand-textMuted">Up to 5 per type. Dismiss anything that isn't useful with the “×”.</p>
+
+        <!-- Videos -->
+        <section class="space-y-3">
+          <h2 class="flex items-center gap-2 text-lg font-bold text-brand-textPrimary"><span class="flex size-7 items-center justify-center rounded-lg bg-brand-infoBg text-brand-info"><i data-lucide="play" class="h-4 w-4"></i></span> Watch these videos</h2>
+          <div class="rec relative flex gap-3 rounded-2xl border border-gray-200 bg-white p-4 hover:shadow-md transition">
+            <button onclick="this.closest('.rec').remove()" class="absolute top-2.5 right-2.5 flex h-7 w-7 items-center justify-center rounded-lg text-brand-textMuted hover:bg-brand-warningBg hover:text-[#c0472f]"><i data-lucide="x" class="h-4 w-4"></i></button>
+            <span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-brand-infoBg text-brand-info"><i data-lucide="play" class="size-5"></i></span>
+            <div class="flex-1 pr-6"><h3 class="text-[13px] font-bold">Rotational Motion — Torque &amp; Angular Momentum</h3><p class="text-xs text-brand-textMuted">Physics · 14 min · not yet watched</p><p class="mt-2 inline-block rounded-md bg-brand-page px-2 py-1 text-xs text-brand-textSecondary">Your weakest topic this month (38% accuracy)</p></div>
+          </div>
+          <div class="rec relative flex gap-3 rounded-2xl border border-gray-200 bg-white p-4 hover:shadow-md transition">
+            <button onclick="this.closest('.rec').remove()" class="absolute top-2.5 right-2.5 flex h-7 w-7 items-center justify-center rounded-lg text-brand-textMuted hover:bg-brand-warningBg hover:text-[#c0472f]"><i data-lucide="x" class="h-4 w-4"></i></button>
+            <span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-brand-infoBg text-brand-info"><i data-lucide="play" class="size-5"></i></span>
+            <div class="flex-1 pr-6"><h3 class="text-[13px] font-bold">Electrochemistry — Nernst Equation Explained</h3><p class="text-xs text-brand-textMuted">Chemistry · 11 min</p><p class="mt-2 inline-block rounded-md bg-brand-page px-2 py-1 text-xs text-brand-textSecondary">Recommended before your next practice set</p></div>
+          </div>
+        </section>
+
+        <!-- Questions -->
+        <section class="space-y-3">
+          <h2 class="flex items-center gap-2 text-lg font-bold text-brand-textPrimary"><span class="flex size-7 items-center justify-center rounded-lg bg-brand-warningBg text-brand-warning"><i data-lucide="pencil-line" class="h-4 w-4"></i></span> Practice these questions <span class="ml-1 text-xs font-medium text-brand-textMuted">· adaptive difficulty</span></h2>
+          <div class="rec relative flex gap-3 rounded-2xl border border-gray-200 bg-white p-4 hover:shadow-md transition">
+            <button onclick="this.closest('.rec').remove()" class="absolute top-2.5 right-2.5 flex h-7 w-7 items-center justify-center rounded-lg text-brand-textMuted hover:bg-brand-warningBg hover:text-[#c0472f]"><i data-lucide="x" class="h-4 w-4"></i></button>
+            <span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-brand-warningBg text-brand-warning"><i data-lucide="pencil-line" class="size-5"></i></span>
+            <div class="flex-1 pr-6"><h3 class="text-[13px] font-bold">Conic Sections — 10 questions <span class="ml-1 rounded-full bg-[#d6f0e8] px-2 py-0.5 text-[10px] font-bold text-[#1d7055] align-middle">Easy</span></h3><p class="text-xs text-brand-textMuted">Mathematics · ~15 min</p><p class="mt-2 inline-block rounded-md bg-brand-page px-2 py-1 text-xs text-brand-textSecondary">Accuracy below 50% — starting easier to rebuild confidence</p></div>
+          </div>
+          <div class="rec relative flex gap-3 rounded-2xl border border-gray-200 bg-white p-4 hover:shadow-md transition">
+            <button onclick="this.closest('.rec').remove()" class="absolute top-2.5 right-2.5 flex h-7 w-7 items-center justify-center rounded-lg text-brand-textMuted hover:bg-brand-warningBg hover:text-[#c0472f]"><i data-lucide="x" class="h-4 w-4"></i></button>
+            <span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-brand-warningBg text-brand-warning"><i data-lucide="pencil-line" class="size-5"></i></span>
+            <div class="flex-1 pr-6"><h3 class="text-[13px] font-bold">Organic Chemistry — 12 questions <span class="ml-1 rounded-full bg-[#fdeae6] px-2 py-0.5 text-[10px] font-bold text-[#c0472f] align-middle">Hard</span></h3><p class="text-xs text-brand-textMuted">Chemistry · ~20 min</p><p class="mt-2 inline-block rounded-md bg-brand-page px-2 py-1 text-xs text-brand-textSecondary">You score 86% on Medium — stepping you up to Hard</p></div>
+          </div>
+        </section>
+
+        <!-- Chapters -->
+        <section class="space-y-3">
+          <h2 class="flex items-center gap-2 text-lg font-bold text-brand-textPrimary"><span class="flex size-7 items-center justify-center rounded-lg bg-brand-subtle text-brand-primary"><i data-lucide="book-open" class="h-4 w-4"></i></span> Focus on these chapters <span class="ml-1 text-xs font-medium text-brand-textMuted">· by exam weightage</span></h2>
+          <div class="rec relative flex gap-3 rounded-2xl border border-gray-200 bg-white p-4 hover:shadow-md transition">
+            <button onclick="this.closest('.rec').remove()" class="absolute top-2.5 right-2.5 flex h-7 w-7 items-center justify-center rounded-lg text-brand-textMuted hover:bg-brand-warningBg hover:text-[#c0472f]"><i data-lucide="x" class="h-4 w-4"></i></button>
+            <span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-brand-subtle text-brand-primary"><i data-lucide="book-open" class="size-5"></i></span>
+            <div class="flex-1 pr-6"><h3 class="text-[13px] font-bold">Coordinate Geometry — Conic Sections</h3><p class="text-xs text-brand-textMuted">Mathematics · mastery 41%</p><p class="mt-2 inline-block rounded-md bg-brand-page px-2 py-1 text-xs text-brand-textSecondary">Low mastery + high JEE weightage — top priority</p></div>
+          </div>
+          <div class="rec relative flex gap-3 rounded-2xl border border-gray-200 bg-white p-4 hover:shadow-md transition">
+            <button onclick="this.closest('.rec').remove()" class="absolute top-2.5 right-2.5 flex h-7 w-7 items-center justify-center rounded-lg text-brand-textMuted hover:bg-brand-warningBg hover:text-[#c0472f]"><i data-lucide="x" class="h-4 w-4"></i></button>
+            <span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-brand-subtle text-brand-primary"><i data-lucide="book-open" class="size-5"></i></span>
+            <div class="flex-1 pr-6"><h3 class="text-[13px] font-bold">Mechanics — Rotational Dynamics</h3><p class="text-xs text-brand-textMuted">Physics · mastery 38%</p><p class="mt-2 inline-block rounded-md bg-brand-page px-2 py-1 text-xs text-brand-textSecondary">Read the chapter notes before re-attempting</p></div>
+          </div>
+        </section>
+      </div>
+    </main>
   </div>
-
-  <main class="max-w-4xl mx-auto px-5 py-7">
-    <div class="flex items-center justify-between mb-1">
-      <h1 class="text-2xl font-bold">Recommended for you</h1>
-      <span class="inline-flex items-center gap-1.5 text-xs text-brand-textMuted"><i data-lucide="refresh-cw" class="h-3.5 w-3.5"></i> Refreshed daily · based on your last 30 days</span>
-    </div>
-    <p class="text-sm text-brand-textMuted mb-6">Up to 5 per type. Dismiss anything that isn't useful with the "×".</p>
-
-    <!-- Videos -->
-    <section class="rounded-2xl bg-white border border-gray-200 p-5 mb-5">
-      <div class="flex items-center gap-2.5 font-bold text-base mb-4">
-        <span class="h-8 w-8 rounded-lg bg-[#e0eefa] text-brand-info flex items-center justify-center"><i data-lucide="play" class="h-4 w-4"></i></span>
-        Watch these videos
-      </div>
-      <div class="space-y-2.5">
-        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
-          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
-          <div class="h-12 w-12 rounded-lg bg-[#e0eefa] text-brand-info flex items-center justify-center shrink-0"><i data-lucide="play" class="h-5 w-5"></i></div>
-          <div class="flex-1 pr-6">
-            <p class="font-semibold text-[14.5px]">Rotational Motion — Torque &amp; Angular Momentum</p>
-            <p class="text-xs text-brand-textMuted">Physics · 14 min · not yet watched</p>
-            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Your weakest topic this month (38% accuracy)</p>
-          </div>
-        </div>
-        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
-          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
-          <div class="h-12 w-12 rounded-lg bg-[#e0eefa] text-brand-info flex items-center justify-center shrink-0"><i data-lucide="play" class="h-5 w-5"></i></div>
-          <div class="flex-1 pr-6">
-            <p class="font-semibold text-[14.5px]">Electrochemistry — Nernst Equation Explained</p>
-            <p class="text-xs text-brand-textMuted">Chemistry · 11 min</p>
-            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Recommended before your next practice set</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Questions -->
-    <section class="rounded-2xl bg-white border border-gray-200 p-5 mb-5">
-      <div class="flex items-center justify-between mb-4">
-        <div class="flex items-center gap-2.5 font-bold text-base">
-          <span class="h-8 w-8 rounded-lg bg-[#fdeae6] text-brand-warning flex items-center justify-center"><i data-lucide="pencil-line" class="h-4 w-4"></i></span>
-          Practice these questions
-        </div>
-        <span class="text-xs text-brand-textMuted">Adaptive difficulty</span>
-      </div>
-      <div class="space-y-2.5">
-        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
-          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
-          <div class="h-12 w-12 rounded-lg bg-[#fdeae6] text-brand-warning flex items-center justify-center shrink-0"><i data-lucide="pencil-line" class="h-5 w-5"></i></div>
-          <div class="flex-1 pr-6">
-            <p class="font-semibold text-[14.5px]">Conic Sections — 10 questions <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#d6f0e8] text-[#1d7055] align-middle">Easy</span></p>
-            <p class="text-xs text-brand-textMuted">Mathematics · ~15 min</p>
-            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Accuracy below 50% — starting easier to rebuild confidence</p>
-          </div>
-        </div>
-        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
-          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
-          <div class="h-12 w-12 rounded-lg bg-[#fdeae6] text-brand-warning flex items-center justify-center shrink-0"><i data-lucide="pencil-line" class="h-5 w-5"></i></div>
-          <div class="flex-1 pr-6">
-            <p class="font-semibold text-[14.5px]">Organic Chemistry — 12 questions <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#fdeae6] text-[#c0472f] align-middle">Hard</span></p>
-            <p class="text-xs text-brand-textMuted">Chemistry · ~20 min</p>
-            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">You score 86% on Medium here — stepping you up to Hard</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Chapters -->
-    <section class="rounded-2xl bg-white border border-gray-200 p-5">
-      <div class="flex items-center justify-between mb-4">
-        <div class="flex items-center gap-2.5 font-bold text-base">
-          <span class="h-8 w-8 rounded-lg bg-brand-subtle text-brand-primary flex items-center justify-center"><i data-lucide="book-open" class="h-4 w-4"></i></span>
-          Focus on these chapters
-        </div>
-        <span class="text-xs text-brand-textMuted">Sorted by exam weightage</span>
-      </div>
-      <div class="space-y-2.5">
-        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
-          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
-          <div class="h-12 w-12 rounded-lg bg-brand-subtle text-brand-primary flex items-center justify-center shrink-0"><i data-lucide="book-open" class="h-5 w-5"></i></div>
-          <div class="flex-1 pr-6">
-            <p class="font-semibold text-[14.5px]">Coordinate Geometry — Conic Sections</p>
-            <p class="text-xs text-brand-textMuted">Mathematics · mastery 41%</p>
-            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Low mastery + high JEE weightage — top priority</p>
-          </div>
-        </div>
-        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
-          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
-          <div class="h-12 w-12 rounded-lg bg-brand-subtle text-brand-primary flex items-center justify-center shrink-0"><i data-lucide="book-open" class="h-5 w-5"></i></div>
-          <div class="flex-1 pr-6">
-            <p class="font-semibold text-[14.5px]">Mechanics — Rotational Dynamics</p>
-            <p class="text-xs text-brand-textMuted">Physics · mastery 38%</p>
-            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Read the chapter notes before re-attempting</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
+</div>
 <script>lucide.createIcons();</script>
 </body>
 </html>
