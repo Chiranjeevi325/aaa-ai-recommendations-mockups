@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post-Test Recommendations · AAA Lakshya</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
+  fontFamily: { sans:['Geist','ui-sans-serif','system-ui','sans-serif'] } } } }
+</script>
+<style> body{font-family:'Geist',ui-sans-serif,system-ui,sans-serif} </style>
+</head>
+<body class="bg-brand-page text-brand-textPrimary">
+
+  <header class="bg-brand-primaryDark text-white">
+    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-2.5 font-bold">
+        <span class="h-8 w-8 rounded-lg flex items-center justify-center text-white text-xs font-extrabold" style="background:linear-gradient(174deg,#3bafa8,#2c9d96)">AAA</span> Lakshya
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm font-medium opacity-90">
+        <span>Dashboard</span><span class="border-b-2 border-brand-secondary pb-3.5 -mb-3.5">Tests</span><span>Study</span><span>Live</span><span>Recommendations</span>
+      </nav>
+      <div class="flex items-center gap-2 text-sm">
+        <span class="hidden sm:inline">Ananya R.</span>
+        <span class="h-8 w-8 rounded-full bg-brand-secondary text-brand-primaryDark flex items-center justify-center font-bold text-xs">AR</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-5 py-2 text-sm">
+      <a href="index.html" class="text-brand-primary font-semibold hover:underline">← All mockups</a>
+      <span class="text-brand-textMuted"> / Tests / Full Mock Test 07 / Result</span>
+    </div>
+  </div>
+
+  <main class="max-w-4xl mx-auto px-5 py-7">
+
+    <!-- Result hero -->
+    <div class="rounded-2xl border border-brand-secondary p-5 mb-5 flex items-center justify-between gap-4" style="background:linear-gradient(135deg,#e0f5f6,#fff)">
+      <div class="flex items-center gap-4">
+        <div class="h-[74px] w-[74px] rounded-full flex items-center justify-center shrink-0" style="background:conic-gradient(#2ba080 0 68%, #f3f4f6 68% 100%)">
+          <div class="h-14 w-14 rounded-full bg-white flex items-center justify-center font-extrabold text-[17px]">68%</div>
+        </div>
+        <div>
+          <p class="text-[17px] font-bold">Full Mock Test 07 — submitted</p>
+          <p class="text-sm text-brand-textMuted mt-0.5">102 / 150 marks · Physics was your weakest section</p>
+        </div>
+      </div>
+      <a href="#" class="text-sm font-semibold text-brand-primary hover:underline whitespace-nowrap">View analysis →</a>
+    </div>
+
+    <!-- Recommendations -->
+    <section class="rounded-2xl bg-white border border-gray-200 p-5">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2.5 font-bold text-base">
+          <span class="h-8 w-8 rounded-lg bg-brand-subtle text-brand-primary flex items-center justify-center"><i data-lucide="sparkles" class="h-4 w-4"></i></span>
+          Recommended next steps
+        </div>
+        <span class="text-xs text-brand-textMuted">Based on this test</span>
+      </div>
+
+      <div class="space-y-2.5">
+        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
+          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
+          <div class="h-12 w-12 rounded-lg bg-[#e0eefa] text-brand-info flex items-center justify-center shrink-0"><i data-lucide="play" class="h-5 w-5"></i></div>
+          <div class="flex-1 pr-6">
+            <p class="text-[11px] font-bold uppercase tracking-wide text-brand-primary">Watch this video</p>
+            <p class="font-semibold text-[14.5px]">Rotational Motion — Torque &amp; Angular Momentum</p>
+            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">You missed 6 of 8 questions on this topic</p>
+            <div class="mt-2.5"><button class="inline-flex items-center gap-1.5 text-white text-[12.5px] font-semibold rounded-lg px-3.5 py-1.5" style="background-image:linear-gradient(174deg,#3bafa8,#2c9d96);box-shadow:0 2px 12px rgba(59,175,168,.3)"><i data-lucide="play" class="h-3.5 w-3.5"></i> Watch now</button></div>
+          </div>
+        </div>
+
+        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
+          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
+          <div class="h-12 w-12 rounded-lg bg-[#fdeae6] text-brand-warning flex items-center justify-center shrink-0"><i data-lucide="pencil-line" class="h-5 w-5"></i></div>
+          <div class="flex-1 pr-6">
+            <p class="text-[11px] font-bold uppercase tracking-wide text-brand-primary">Practice these questions</p>
+            <p class="font-semibold text-[14.5px]">Rotational Motion — 8 question set <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#d6f0e8] text-[#1d7055] align-middle">Easy</span></p>
+            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Accuracy &lt; 50% — building back up with easier questions first</p>
+            <div class="mt-2.5"><button class="inline-flex items-center gap-1.5 text-brand-primary text-[12.5px] font-semibold rounded-lg px-3.5 py-1.5 border border-brand-secondary bg-white">Start practice</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

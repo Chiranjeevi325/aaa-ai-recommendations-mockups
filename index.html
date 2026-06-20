@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAA Lakshya — AI Recommendations Mockups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
+  fontFamily: { sans:['Geist','ui-sans-serif','system-ui','sans-serif'] } } } }
+</script>
+<style>
+  body{font-family:'Geist',ui-sans-serif,system-ui,sans-serif}
+  .card{transition:transform .15s ease, box-shadow .15s ease}
+  .card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(10,124,133,.25)}
+</style>
+</head>
+<body class="bg-brand-page text-brand-textPrimary">
+
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <header class="text-center mb-12">
+      <h1 class="flex items-center justify-center gap-3 text-5xl font-extrabold text-[#1e293b]">✨ AAA Lakshya — AI Recommendations</h1>
+      <p class="mt-4 text-2xl font-bold text-[#334155]">Interactive Mockups — Personalized Learning</p>
+      <p class="mt-3 text-base text-[#475569]">June 20, 2026 | Phase 2 — P1 (Should Have)</p>
+      <p class="mt-1 text-sm text-[#94a3b8]">Based on: P2-05 AI Recommendations Spec (ORD 4.3.2, Agenda §14) · Approved 18-Mar-2026, Hareesh PK</p>
+    </header>
+
+    <!-- Group: Student -->
+    <section class="mb-10">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="rounded-full bg-brand-subtle text-brand-primary text-xs font-semibold px-3 py-1">2 screens</span>
+        <h2 class="text-2xl font-bold text-brand-primary">Student — Discover &amp; Focus</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <a href="dashboard.html" class="card block rounded-2xl bg-white border-l-4 border-brand-primary shadow-sm p-6">
+          <div class="h-11 w-11 rounded-xl bg-brand-subtle flex items-center justify-center text-brand-primary mb-4"><i data-lucide="sparkles" class="h-6 w-6"></i></div>
+          <p class="font-bold text-lg">1. Dashboard — Suggested for You</p>
+          <p class="text-sm text-brand-textMuted mt-1">"Suggested for You" widget with mixed video / practice / chapter cards, plus a colour-coded Topic Mastery panel and a Weak Topics summary.</p>
+        </a>
+        <a href="recommendations.html" class="card block rounded-2xl bg-white border-l-4 border-brand-primary shadow-sm p-6">
+          <div class="h-11 w-11 rounded-xl bg-brand-subtle flex items-center justify-center text-brand-primary mb-4"><i data-lucide="list-checks" class="h-6 w-6"></i></div>
+          <p class="font-bold text-lg">2. All Recommendations</p>
+          <p class="text-sm text-brand-textMuted mt-1">Full page grouped by type — Watch Videos, Practice Questions, Focus Chapters. Max 5 per type, adaptive difficulty, each card dismissible with "×".</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Group: After a test -->
+    <section class="mb-10">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="rounded-full bg-[#d6f0e8] text-brand-success text-xs font-semibold px-3 py-1">1 screen</span>
+        <h2 class="text-2xl font-bold text-brand-success">After a Test — Act Immediately</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <a href="post-test.html" class="card block rounded-2xl bg-white border-l-4 border-brand-success shadow-sm p-6">
+          <div class="h-11 w-11 rounded-xl bg-[#d6f0e8] flex items-center justify-center text-brand-success mb-4"><i data-lucide="clipboard-check" class="h-6 w-6"></i></div>
+          <p class="font-bold text-lg">3. Post-Test Recommendations</p>
+          <p class="text-sm text-brand-textMuted mt-1">On the results page — targeted next steps based on the topics the student performed poorly on, so they can fix gaps while it's fresh.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Group: Tier gating -->
+    <section class="mb-10">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="rounded-full bg-[#fdeae6] text-brand-warning text-xs font-semibold px-3 py-1">1 screen</span>
+        <h2 class="text-2xl font-bold text-brand-warning">Free / Standard — Upgrade Path</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <a href="upgrade.html" class="card block rounded-2xl bg-white border-l-4 border-brand-warning shadow-sm p-6">
+          <div class="h-11 w-11 rounded-xl bg-[#fdeae6] flex items-center justify-center text-brand-warning mb-4"><i data-lucide="lock" class="h-6 w-6"></i></div>
+          <p class="font-bold text-lg">4. Upgrade Prompt</p>
+          <p class="text-sm text-brand-textMuted mt-1">Recommendations are exclusive to the Advanced tier. Free / Standard students see a locked preview with an invitation to upgrade.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Group: Reference -->
+    <section class="mb-10">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="rounded-full bg-[#e0eefa] text-brand-info text-xs font-semibold px-3 py-1">reference</span>
+        <h2 class="text-2xl font-bold text-brand-info">Spec &amp; Traceability</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <a href="requirements.html" class="card block rounded-2xl bg-white border-l-4 border-brand-info shadow-sm p-6">
+          <div class="h-11 w-11 rounded-xl bg-[#e0eefa] flex items-center justify-center text-brand-info mb-4"><i data-lucide="table-2" class="h-6 w-6"></i></div>
+          <p class="font-bold text-lg">5. Requirements Traceability</p>
+          <p class="text-sm text-brand-textMuted mt-1">Every requirement (AI-01 → AI-46) from the approved spec, plus acceptance criteria, out-of-scope items and dependencies.</p>
+        </a>
+      </div>
+    </section>
+
+    <p class="text-center text-xs text-brand-textMuted mt-12">AAA Lakshya · AI Recommendations · interactive mockups for client review — not connected to the live application. Sample data only.</p>
+  </div>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upgrade to Advanced · AAA Lakshya</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
+  fontFamily: { sans:['Geist','ui-sans-serif','system-ui','sans-serif'] } } } }
+</script>
+<style> body{font-family:'Geist',ui-sans-serif,system-ui,sans-serif} </style>
+</head>
+<body class="bg-brand-page text-brand-textPrimary">
+
+  <header class="bg-brand-primaryDark text-white">
+    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-2.5 font-bold">
+        <span class="h-8 w-8 rounded-lg flex items-center justify-center text-white text-xs font-extrabold" style="background:linear-gradient(174deg,#3bafa8,#2c9d96)">AAA</span> Lakshya
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm font-medium opacity-90">
+        <span>Dashboard</span><span>Tests</span><span>Study</span><span>Live</span><span class="border-b-2 border-brand-secondary pb-3.5 -mb-3.5">Recommendations</span>
+      </nav>
+      <div class="flex items-center gap-2 text-sm">
+        <span class="hidden sm:inline">Rahul M.</span>
+        <span class="h-8 w-8 rounded-full bg-brand-secondary text-brand-primaryDark flex items-center justify-center font-bold text-xs">RM</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-5 py-2 text-sm">
+      <a href="index.html" class="text-brand-primary font-semibold hover:underline">← All mockups</a>
+      <span class="text-brand-textMuted"> / Recommendations (Standard tier)</span>
+    </div>
+  </div>
+
+  <main class="max-w-3xl mx-auto px-5 py-10">
+    <div class="rounded-2xl border border-dashed border-brand-secondary p-10 text-center" style="background:linear-gradient(160deg,#fff,#e0f5f6)">
+      <div class="h-16 w-16 mx-auto mb-4 rounded-2xl bg-brand-subtle text-brand-primary flex items-center justify-center"><i data-lucide="lock" class="h-7 w-7"></i></div>
+      <h1 class="text-xl font-bold">Unlock personalized recommendations</h1>
+      <p class="text-sm text-brand-textMuted max-w-md mx-auto mt-2 mb-5">Upgrade to <b>Advanced</b> to get AI-powered video, practice and chapter suggestions tailored to your weak areas — refreshed daily and after every test.</p>
+      <button class="inline-flex items-center gap-2 text-white text-sm font-bold rounded-xl px-5 py-2.5" style="background-image:linear-gradient(174deg,#3bafa8,#2c9d96);box-shadow:0 2px 14px rgba(59,175,168,.35)">Upgrade to Advanced <i data-lucide="arrow-right" class="h-4 w-4"></i></button>
+
+      <!-- locked preview -->
+      <div class="mt-7 max-w-md mx-auto blur-[3px] opacity-60 select-none pointer-events-none">
+        <div class="flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 bg-white text-left">
+          <div class="h-12 w-12 rounded-lg bg-[#e0eefa] text-brand-info flex items-center justify-center shrink-0"><i data-lucide="play" class="h-5 w-5"></i></div>
+          <div class="flex-1">
+            <p class="text-[11px] font-bold uppercase tracking-wide text-brand-primary">Watch this video</p>
+            <p class="font-semibold text-[14.5px]">Rotational Motion — Torque &amp; Angular Momentum</p>
+            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Recommended because your accuracy is 38%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center text-xs text-brand-textMuted mt-6">Free &amp; Standard tiers see this prompt in place of recommendations (AI-14).</p>
+  </main>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

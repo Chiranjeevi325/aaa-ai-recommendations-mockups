@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Requirements Traceability · AAA Lakshya AI Recommendations</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
+  fontFamily: { sans:['Geist','ui-sans-serif','system-ui','sans-serif'] } } } }
+</script>
+<style>
+  body{font-family:'Geist',ui-sans-serif,system-ui,sans-serif}
+  th,td{text-align:left;padding:9px 12px;vertical-align:top}
+  th{background:#f3f4f6;font-weight:700;color:#374151;border-bottom:1px solid #d1d5db}
+  td{border-bottom:1px solid #f3f4f6;color:#374151;font-size:13px}
+  tr:last-child td{border-bottom:none}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d1d5db;border-radius:8px;overflow:hidden}
+  .id{font-weight:700;color:#075e66;white-space:nowrap;width:70px}
+  .ref{color:#6b7280;white-space:nowrap;width:120px}
+</style>
+</head>
+<body class="bg-brand-page text-brand-textPrimary">
+
+  <header class="bg-brand-primaryDark text-white">
+    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-2.5 font-bold">
+        <span class="h-8 w-8 rounded-lg flex items-center justify-center text-white text-xs font-extrabold" style="background:linear-gradient(174deg,#3bafa8,#2c9d96)">AAA</span> Lakshya
+      </div>
+      <span class="text-sm opacity-90">AI Recommendations · P2-05</span>
+    </div>
+  </header>
+
+  <div class="bg-white border-b border-gray-200">
+    <div class="max-w-5xl mx-auto px-5 py-2 text-sm">
+      <a href="index.html" class="text-brand-primary font-semibold hover:underline">← All mockups</a>
+      <span class="text-brand-textMuted"> / Requirements Traceability</span>
+    </div>
+  </div>
+
+  <main class="max-w-5xl mx-auto px-5 py-8">
+    <h1 class="text-2xl font-bold">Requirements traceability</h1>
+    <p class="text-sm text-brand-textMuted mt-1 mb-6">Every requirement from the approved spec (P2-05), so each mockup screen can be checked against it.</p>
+
+    <h2 class="text-base font-bold text-brand-primaryDark mt-6 mb-2">AI-1 · Recommendation Types</h2>
+    <table>
+      <tr><th>ID</th><th>Requirement</th><th>Ref</th></tr>
+      <tr><td class="id">AI-01</td><td>Generate "Watch this video" recommendations based on weak topics</td><td class="ref">ORD 4.3.2, AAA</td></tr>
+      <tr><td class="id">AI-02</td><td>Video recommendations link directly to the video player</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-03</td><td>Generate "Practice these questions" recommendations with adaptive difficulty</td><td class="ref">ORD 4.3.2, AAA</td></tr>
+      <tr><td class="id">AI-05</td><td>Generate "Focus on this chapter" recommendations for low mastery chapters</td><td class="ref">ORD 4.3.2, AAA</td></tr>
+      <tr><td class="id">AI-07</td><td>Show max 5 recommendations per type to avoid overwhelm</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-08</td><td>Allow dismissing / hiding individual recommendations via the "×"</td><td class="ref">—</td></tr>
+    </table>
+
+    <h2 class="text-base font-bold text-brand-primaryDark mt-6 mb-2">AI-2 · Recommendation Display Locations</h2>
+    <table>
+      <tr><th>ID</th><th>Requirement</th><th>Ref</th></tr>
+      <tr><td class="id">AI-09</td><td>Display "Suggested for You" widget on student dashboard</td><td class="ref">ORD 4.3.2, AAA</td></tr>
+      <tr><td class="id">AI-10</td><td>Dashboard widget shows top 3–5 mixed recommendations</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-11</td><td>"View All Recommendations" link to full recommendations page</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-12</td><td>Display recommendations after test completion (on results page)</td><td class="ref">AAA</td></tr>
+      <tr><td class="id">AI-13</td><td>Post-test recommendations based on topics where student performed poorly</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-14</td><td>Free/Standard tier users see "Upgrade" prompt instead of recommendations</td><td class="ref">AAA</td></tr>
+    </table>
+
+    <h2 class="text-base font-bold text-brand-primaryDark mt-6 mb-2">AI-3 · Personalization Factors</h2>
+    <table>
+      <tr><th>ID</th><th>Requirement</th><th>Ref</th></tr>
+      <tr><td class="id">AI-15</td><td>Analyze test performance history (last 30 days minimum)</td><td class="ref">AAA</td></tr>
+      <tr><td class="id">AI-16</td><td>Track accuracy per topic / chapter / subject</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-17</td><td>Track time spent per topic (video watch time + test time)</td><td class="ref">AAA</td></tr>
+      <tr><td class="id">AI-18</td><td>Determine difficulty comfort zone based on performance at each level</td><td class="ref">AAA</td></tr>
+      <tr><td class="id">AI-19</td><td>Consider target exam type (KCET/NEET/JEE) for relevant content</td><td class="ref">AAA</td></tr>
+      <tr><td class="id">AI-20</td><td>Consider target exam date for urgency weighting</td><td class="ref">AAA</td></tr>
+      <tr><td class="id">AI-22</td><td>Minimum 5 test attempts before generating meaningful recommendations</td><td class="ref">—</td></tr>
+    </table>
+
+    <h2 class="text-base font-bold text-brand-primaryDark mt-6 mb-2">AI-4 · Adaptive Difficulty Logic <span class="font-medium text-brand-textMuted">— Basic ML with rule-based fallback</span></h2>
+    <table>
+      <tr><th>ID</th><th>Requirement</th><th>Ref</th></tr>
+      <tr><td class="id">AI-23</td><td>Track student accuracy at Easy, Medium, Hard difficulty levels</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-24</td><td>If accuracy &gt;80% on Medium: increase Hard questions in recommendations</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-25</td><td>If accuracy &gt;80% on Medium: reduce Easy questions in recommendations</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-26</td><td>If accuracy &lt;50% on Medium: increase Easy questions in practice sets</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-27</td><td>If accuracy &lt;50% on Medium: recommend concept videos before more practice</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-28</td><td>If accuracy &lt;50% on Medium: recommend chapter notes for review</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-29</td><td>Adjust recommendations in real-time during practice sessions / custom test</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-30</td><td>Weekly analysis job to update personalized learning path</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-31</td><td>Store difficulty profile per student per subject</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-32</td><td>Use Basic ML model for recommendation scoring (not rule-based only)</td><td class="ref">AAA</td></tr>
+      <tr><td class="id">AI-33</td><td>Smart-test: when a custom test uses random selection, pick questions from earlier performance (answered Easy before → serve Medium/Hard)</td><td class="ref">—</td></tr>
+    </table>
+
+    <h2 class="text-base font-bold text-brand-primaryDark mt-6 mb-2">AI-5 · Recommendation Engine</h2>
+    <table>
+      <tr><th>ID</th><th>Requirement</th><th>Ref</th></tr>
+      <tr><td class="id">AI-33</td><td>Use Basic ML (collaborative filtering or content-based) for recommendations</td><td class="ref">AAA</td></tr>
+      <tr><td class="id">AI-34</td><td>Fall back to rule-based recommendations if ML data insufficient</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-35</td><td>Recommendation refresh: daily batch job + on-demand after test</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-37</td><td>Avoid recommending already-completed content (watched videos, passed chapters)</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-38</td><td>Diversify recommendations (mix of videos, questions, chapters)</td><td class="ref">—</td></tr>
+    </table>
+
+    <h2 class="text-base font-bold text-brand-primaryDark mt-6 mb-2">AI-6 · Topic Mastery Display</h2>
+    <table>
+      <tr><th>ID</th><th>Requirement</th><th>Ref</th></tr>
+      <tr><td class="id">AI-41</td><td>Display topic mastery percentage on dashboard</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-42</td><td>Mastery calculated from: test scores + video completion + chapter tests</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-43</td><td>Color-code mastery: Green (&gt;80%), Yellow (50–80%), Red (&lt;50%)</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-44</td><td>Click mastery indicator to see breakdown and recommendations</td><td class="ref">—</td></tr>
+      <tr><td class="id">AI-45</td><td>Show "Weak Topics" summary (topics with &lt;50% mastery)</td><td class="ref">ORD 4.3.2</td></tr>
+      <tr><td class="id">AI-46</td><td>Weak topics list sorted by importance (exam weightage)</td><td class="ref">—</td></tr>
+    </table>
+
+    <div class="grid md:grid-cols-2 gap-5 mt-8">
+      <div class="rounded-xl bg-white border border-gray-200 p-5">
+        <h3 class="font-bold text-sm mb-3 flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand-success"></i> Acceptance criteria</h3>
+        <ul class="space-y-1.5 text-[13px] text-brand-textSecondary">
+          <li>✓ Only Advanced tier students see AI recommendations</li>
+          <li>✓ Free / Standard see an upgrade prompt</li>
+          <li>✓ Recommendations appear on dashboard and after tests</li>
+          <li>✓ Minimum 5 tests before recommendations activate</li>
+          <li>✓ Refresh daily + after each test</li>
+          <li>✓ Difficulty adapts (&gt;80% = harder, &lt;50% = easier)</li>
+          <li>✓ Basic ML model (not deep learning)</li>
+          <li>✓ Recommendations load within 2 seconds</li>
+        </ul>
+      </div>
+      <div class="rounded-xl bg-white border border-gray-200 p-5">
+        <h3 class="font-bold text-sm mb-3 flex items-center gap-2"><i data-lucide="minus-circle" class="h-4 w-4 text-brand-textMuted"></i> Out of scope (this phase)</h3>
+        <ul class="space-y-1.5 text-[13px] text-brand-textSecondary">
+          <li>— Daily study plan (deferred)</li>
+          <li>— Forgetting curve / spaced repetition</li>
+          <li>— Advanced ML / deep learning models</li>
+          <li>— Real-time ML inference (batch is sufficient)</li>
+        </ul>
+        <h3 class="font-bold text-sm mt-4 mb-3 flex items-center gap-2"><i data-lucide="link" class="h-4 w-4 text-brand-info"></i> Dependencies</h3>
+        <ul class="space-y-1.5 text-[13px] text-brand-textSecondary">
+          <li>P2-01 Video Player · P2-02 Test Interface</li>
+          <li>P2-03 Results &amp; Feedback · P2-04 Dashboard</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="text-center text-xs text-brand-textMuted mt-10">AAA Lakshya · AI Recommendations (P2-05) · Approved 18-March-2026, Hareesh PK</p>
+  </main>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>

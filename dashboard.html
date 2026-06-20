@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Suggested for You · AAA Lakshya</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand: { primary:'#0a7c85', primaryDark:'#075e66', heroTeal:'#1a9ea8', secondary:'#a8dce0', subtle:'#e0f5f6', page:'#f5f9f9', success:'#2ba080', info:'#3b8fd4', warning:'#f4735a', textPrimary:'#111827', textSecondary:'#374151', textMuted:'#6b7280' } },
+  fontFamily: { sans:['Geist','ui-sans-serif','system-ui','sans-serif'] } } } }
+</script>
+<style> body{font-family:'Geist',ui-sans-serif,system-ui,sans-serif} </style>
+</head>
+<body class="bg-brand-page text-brand-textPrimary">
+
+  <!-- App header -->
+  <header class="bg-brand-primaryDark text-white">
+    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+      <div class="flex items-center gap-2.5 font-bold">
+        <span class="h-8 w-8 rounded-lg flex items-center justify-center text-white text-xs font-extrabold" style="background:linear-gradient(174deg,#3bafa8,#2c9d96)">AAA</span> Lakshya
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm font-medium opacity-90">
+        <span class="border-b-2 border-brand-secondary pb-3.5 -mb-3.5">Dashboard</span><span>Tests</span><span>Study</span><span>Live</span><span>Recommendations</span>
+      </nav>
+      <div class="flex items-center gap-2 text-sm">
+        <span class="hidden sm:inline">Ananya R.</span>
+        <span class="h-8 w-8 rounded-full bg-brand-secondary text-brand-primaryDark flex items-center justify-center font-bold text-xs">AR</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-5 py-2 text-sm">
+      <a href="index.html" class="text-brand-primary font-semibold hover:underline">← All mockups</a>
+      <span class="text-brand-textMuted"> / Dashboard — Suggested for You</span>
+    </div>
+  </div>
+
+  <main class="max-w-6xl mx-auto px-5 py-7">
+    <h1 class="text-2xl font-bold mb-1">Welcome back, Ananya 👋</h1>
+    <p class="text-sm text-brand-textMuted mb-6">Your JEE target is 142 days away. Here's where to focus next.</p>
+
+    <div class="grid lg:grid-cols-5 gap-5">
+
+      <!-- Suggested for you -->
+      <div class="lg:col-span-3 rounded-2xl bg-white border border-gray-200 p-5">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-2.5 font-bold text-base">
+            <span class="h-8 w-8 rounded-lg bg-brand-subtle flex items-center justify-center text-brand-primary"><i data-lucide="sparkles" class="h-4 w-4"></i></span>
+            Suggested for You
+          </div>
+          <a href="recommendations.html" class="text-sm font-semibold text-brand-primary hover:underline">View all →</a>
+        </div>
+
+        <!-- video -->
+        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition mb-2.5">
+          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
+          <div class="h-12 w-12 rounded-lg bg-[#e0eefa] text-brand-info flex items-center justify-center shrink-0"><i data-lucide="play" class="h-5 w-5"></i></div>
+          <div class="flex-1 min-w-0 pr-6">
+            <p class="text-[11px] font-bold uppercase tracking-wide text-brand-primary">Watch this video</p>
+            <p class="font-semibold text-[14.5px]">Rotational Motion — Torque &amp; Angular Momentum</p>
+            <p class="text-xs text-brand-textMuted">Physics · 14 min</p>
+            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Recommended because your accuracy here is 38%</p>
+            <div class="mt-2.5"><button class="inline-flex items-center gap-1.5 text-white text-[12.5px] font-semibold rounded-lg px-3.5 py-1.5" style="background-image:linear-gradient(174deg,#3bafa8,#2c9d96);box-shadow:0 2px 12px rgba(59,175,168,.3)"><i data-lucide="play" class="h-3.5 w-3.5"></i> Watch now</button></div>
+          </div>
+        </div>
+
+        <!-- practice -->
+        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition mb-2.5">
+          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
+          <div class="h-12 w-12 rounded-lg bg-[#fdeae6] text-brand-warning flex items-center justify-center shrink-0"><i data-lucide="pencil-line" class="h-5 w-5"></i></div>
+          <div class="flex-1 min-w-0 pr-6">
+            <p class="text-[11px] font-bold uppercase tracking-wide text-brand-primary">Practice these questions</p>
+            <p class="font-semibold text-[14.5px]">Thermodynamics — 10 question set <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-[#fff3cd] text-[#856404] align-middle">Medium</span></p>
+            <p class="text-xs text-brand-textMuted">Chemistry · ~15 min · adaptive difficulty</p>
+            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">Tuned to your level — you score 72% on Medium here</p>
+            <div class="mt-2.5"><button class="inline-flex items-center gap-1.5 text-white text-[12.5px] font-semibold rounded-lg px-3.5 py-1.5" style="background-image:linear-gradient(174deg,#3bafa8,#2c9d96);box-shadow:0 2px 12px rgba(59,175,168,.3)">Start practice <i data-lucide="arrow-right" class="h-3.5 w-3.5"></i></button></div>
+          </div>
+        </div>
+
+        <!-- chapter -->
+        <div class="rec relative flex gap-3 items-start p-3.5 rounded-xl border border-gray-200 hover:border-brand-secondary hover:shadow-md transition">
+          <button onclick="this.closest('.rec').remove()" class="absolute top-2 right-2 h-6 w-6 rounded-md text-brand-textMuted hover:bg-brand-warning/10 hover:text-brand-warning flex items-center justify-center"><i data-lucide="x" class="h-4 w-4"></i></button>
+          <div class="h-12 w-12 rounded-lg bg-brand-subtle text-brand-primary flex items-center justify-center shrink-0"><i data-lucide="book-open" class="h-5 w-5"></i></div>
+          <div class="flex-1 min-w-0 pr-6">
+            <p class="text-[11px] font-bold uppercase tracking-wide text-brand-primary">Focus on this chapter</p>
+            <p class="font-semibold text-[14.5px]">Coordinate Geometry — Conic Sections</p>
+            <p class="text-xs text-brand-textMuted">Mathematics · low mastery (41%)</p>
+            <p class="mt-1.5 inline-block text-xs text-brand-textSecondary bg-gray-100 rounded-md px-2 py-1">High exam weightage for JEE — worth prioritising</p>
+            <div class="mt-2.5"><button class="inline-flex items-center gap-1.5 text-brand-primary text-[12.5px] font-semibold rounded-lg px-3.5 py-1.5 border border-brand-secondary bg-white">Open chapter</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Topic mastery -->
+      <div class="lg:col-span-2 rounded-2xl bg-white border border-gray-200 p-5">
+        <div class="flex items-center gap-2.5 font-bold text-base mb-4">
+          <span class="h-8 w-8 rounded-lg bg-brand-subtle flex items-center justify-center text-brand-primary"><i data-lucide="target" class="h-4 w-4"></i></span>
+          Topic Mastery
+        </div>
+
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="w-32 text-[13px] font-medium text-brand-textSecondary">Organic Chemistry</span>
+            <div class="flex-1 h-2.5 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-brand-success" style="width:86%"></div></div>
+            <span class="w-10 text-right text-[13px] font-bold text-brand-success">86%</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-32 text-[13px] font-medium text-brand-textSecondary">Calculus</span>
+            <div class="flex-1 h-2.5 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-brand-success" style="width:81%"></div></div>
+            <span class="w-10 text-right text-[13px] font-bold text-brand-success">81%</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-32 text-[13px] font-medium text-brand-textSecondary">Thermodynamics</span>
+            <div class="flex-1 h-2.5 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full" style="width:64%;background:#e0a800"></div></div>
+            <span class="w-10 text-right text-[13px] font-bold" style="color:#b8860b">64%</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-32 text-[13px] font-medium text-brand-textSecondary">Conic Sections</span>
+            <div class="flex-1 h-2.5 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-brand-warning" style="width:41%"></div></div>
+            <span class="w-10 text-right text-[13px] font-bold text-brand-warning">41%</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-32 text-[13px] font-medium text-brand-textSecondary">Rotational Motion</span>
+            <div class="flex-1 h-2.5 rounded-full bg-gray-100 overflow-hidden"><div class="h-full rounded-full bg-brand-warning" style="width:38%"></div></div>
+            <span class="w-10 text-right text-[13px] font-bold text-brand-warning">38%</span>
+          </div>
+        </div>
+
+        <div class="mt-4 rounded-xl bg-[#fdeae6] border border-[#f6c4b8] p-3.5">
+          <p class="flex items-center gap-1.5 font-bold text-sm text-[#c0472f]"><i data-lucide="alert-triangle" class="h-4 w-4"></i> Weak topics (mastery &lt; 50%)</p>
+          <p class="text-xs text-[#c0472f] mt-1">Sorted by exam weightage — start here for the biggest gains.</p>
+          <div class="flex flex-wrap gap-1.5 mt-2">
+            <span class="bg-white border border-[#f0bdb0] rounded-full px-2.5 py-0.5 text-xs font-semibold">Rotational Motion</span>
+            <span class="bg-white border border-[#f0bdb0] rounded-full px-2.5 py-0.5 text-xs font-semibold">Conic Sections</span>
+            <span class="bg-white border border-[#f0bdb0] rounded-full px-2.5 py-0.5 text-xs font-semibold">Electrochemistry</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3.5 mt-3 text-[11px] text-brand-textMuted">
+          <span class="inline-flex items-center gap-1.5"><i class="inline-block h-2.5 w-2.5 rounded bg-brand-success"></i> Strong &gt;80%</span>
+          <span class="inline-flex items-center gap-1.5"><i class="inline-block h-2.5 w-2.5 rounded" style="background:#e0a800"></i> Moderate 50–80%</span>
+          <span class="inline-flex items-center gap-1.5"><i class="inline-block h-2.5 w-2.5 rounded bg-brand-warning"></i> Weak &lt;50%</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+<script>lucide.createIcons();</script>
+</body>
+</html>
